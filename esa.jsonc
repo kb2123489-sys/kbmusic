@@ -1,58 +1,10 @@
 {
     "assets": {
-        "directory": ".next/static"
+        "directory": ".next"
     },
     "routes": [
-        // 静态资源文件
         {
-            "src": "^/_next/static/(.*)$",
-            "dest": "/.next/static/$1"
-        },
-        {
-            "src": "^/static/(.*)$",
-            "dest": "/static/$1"
-        },
-        {
-            "src": "^/favicon.ico$",
-            "dest": "/.next/server/app/favicon.ico"
-        },
-        {
-            "src": "^/robots.txt$",
-            "dest": "/public/robots.txt"
-        },
-        {
-            "src": "^/sitemap.xml$",
-            "dest": "/public/sitemap.xml"
-        },
-        
-        // API 路由 - 需要 Node.js 运行时
-        {
-            "src": "^/api/download(?:/(.*))?$",
-            "dest": "/.next/server/app/api/download/route.js"
-        },
-        {
-            "src": "^/api/search(?:/(.*))?$",
-            "dest": "/.next/server/app/api/search/route.js"
-        },
-        {
-            "src": "^/api/url(?:/(.*))?$",
-            "dest": "/.next/server/app/api/url/route.js"
-        },
-        
-        // 页面路由
-        {
-            "src": "^/about$",
-            "dest": "/.next/server/app/about/page.js"
-        },
-        {
-            "src": "^/$",
-            "dest": "/.next/server/app/page.js"
-        },
-        
-        // 回退路由
-        {
-            "src": "^/(.*)$",
-            "dest": "/.next/server/app/page.js"
+            "src": ".*"
         }
     ]
 }
